@@ -27,6 +27,7 @@
  */
 declare module '$env/static/private' {
 	export const GJS_DEBUG_TOPICS: string;
+	export const npm_package_dependencies__fontsource_barlow: string;
 	export const USER: string;
 	export const LC_TIME: string;
 	export const npm_config_user_agent: string;
@@ -60,6 +61,7 @@ declare module '$env/static/private' {
 	export const NVM_DIR: string;
 	export const WAYLAND_DISPLAY: string;
 	export const npm_package_scripts_dev: string;
+	export const npm_package_dependencies__fontsource_fraunces: string;
 	export const LOGNAME: string;
 	export const npm_package_type: string;
 	export const _: string;
@@ -77,6 +79,7 @@ declare module '$env/static/private' {
 	export const SESSION_MANAGER: string;
 	export const INVOCATION_ID: string;
 	export const npm_package_name: string;
+	export const npm_package_dependencies__iconify_svelte: string;
 	export const NODE: string;
 	export const XDG_MENU_PREFIX: string;
 	export const XDG_RUNTIME_DIR: string;
@@ -166,6 +169,7 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		GJS_DEBUG_TOPICS: string;
+		npm_package_dependencies__fontsource_barlow: string;
 		USER: string;
 		LC_TIME: string;
 		npm_config_user_agent: string;
@@ -199,6 +203,7 @@ declare module '$env/dynamic/private' {
 		NVM_DIR: string;
 		WAYLAND_DISPLAY: string;
 		npm_package_scripts_dev: string;
+		npm_package_dependencies__fontsource_fraunces: string;
 		LOGNAME: string;
 		npm_package_type: string;
 		_: string;
@@ -216,6 +221,7 @@ declare module '$env/dynamic/private' {
 		SESSION_MANAGER: string;
 		INVOCATION_ID: string;
 		npm_package_name: string;
+		npm_package_dependencies__iconify_svelte: string;
 		NODE: string;
 		XDG_MENU_PREFIX: string;
 		XDG_RUNTIME_DIR: string;
