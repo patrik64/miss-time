@@ -5,7 +5,7 @@
 /// <reference types="@sveltejs/kit" />
 
 /**
- * Environment variables [loaded by Vite](https://vitejs.dev/guide/env-and-mode.html#env-files) from `.env` files and `process.env`. Like [`$env/dynamic/private`](https://kit.svelte.dev/docs/modules#$env-dynamic-private), this module cannot be imported into client-side code. This module only includes variables that _do not_ begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env) _and do_ start with [`config.kit.env.privatePrefix`](https://kit.svelte.dev/docs/configuration#env) (if configured).
+ * Environment variables [loaded by Vite](https://vitejs.dev/guide/env-and-mode.html#env-files) from `.env` files and `process.env`. Like [`$env/dynamic/private`](https://kit.svelte.dev/docs/modules#$env-dynamic-private), this module cannot be imported into client-side code. This module only includes variables that _do not_ begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env).
  * 
  * _Unlike_ [`$env/dynamic/private`](https://kit.svelte.dev/docs/modules#$env-dynamic-private), the values exported from this module are statically injected into your bundle at build time, enabling optimisations like dead code elimination.
  * 
@@ -27,14 +27,15 @@
  */
 declare module '$env/static/private' {
 	export const GJS_DEBUG_TOPICS: string;
+	export const npm_package_devDependencies__sveltejs_adapter_vercel: string;
 	export const npm_package_dependencies__fontsource_barlow: string;
 	export const USER: string;
 	export const LC_TIME: string;
 	export const npm_config_user_agent: string;
 	export const XDG_SESSION_TYPE: string;
 	export const BUN_INSTALL: string;
-	export const npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 	export const npm_package_devDependencies_vite: string;
+	export const npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 	export const npm_node_execpath: string;
 	export const SHLVL: string;
 	export const OLDPWD: string;
@@ -46,6 +47,7 @@ declare module '$env/static/private' {
 	export const ZSH: string;
 	export const LSCOLORS: string;
 	export const NVM_INC: string;
+	export const npm_package_devDependencies_svelte_preprocess: string;
 	export const GTK_MODULES: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
 	export const PAGER: string;
@@ -56,7 +58,6 @@ declare module '$env/static/private' {
 	export const GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 	export const COLORTERM: string;
 	export const TERMINATOR_DBUS_NAME: string;
-	export const npm_package_devDependencies__tailwindcss_forms: string;
 	export const npm_package_devDependencies_tailwindcss: string;
 	export const NVM_DIR: string;
 	export const WAYLAND_DISPLAY: string;
@@ -101,7 +102,6 @@ declare module '$env/static/private' {
 	export const SSH_AUTH_SOCK: string;
 	export const SSH_AGENT_LAUNCHER: string;
 	export const npm_package_devDependencies__sveltejs_kit: string;
-	export const npm_package_devDependencies__tailwindcss_typography: string;
 	export const LC_NAME: string;
 	export const TERMINATOR_UUID: string;
 	export const SHELL: string;
@@ -134,7 +134,6 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_preview: string;
 	export const VTE_VERSION: string;
 	export const PNPM_HOME: string;
-	export const npm_package_devDependencies__tailwindcss_aspect_ratio: string;
 	export const INIT_CWD: string;
 	export const NODE_ENV: string;
 }
@@ -149,15 +148,13 @@ declare module '$env/static/private' {
  * ```
  */
 declare module '$env/static/public' {
-	
+
 }
 
 /**
- * This module provides access to runtime environment variables, as defined by the platform you're running on. For example if you're using [`adapter-node`](https://github.com/sveltejs/kit/tree/master/packages/adapter-node) (or running [`vite preview`](https://kit.svelte.dev/docs/cli)), this is equivalent to `process.env`. This module only includes variables that _do not_ begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env) _and do_ start with [`config.kit.env.privatePrefix`](https://kit.svelte.dev/docs/configuration#env) (if configured).
+ * This module provides access to runtime environment variables, as defined by the platform you're running on. For example if you're using [`adapter-node`](https://github.com/sveltejs/kit/tree/master/packages/adapter-node) (or running [`vite preview`](https://kit.svelte.dev/docs/cli)), this is equivalent to `process.env`. This module only includes variables that _do not_ begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env).
  * 
  * This module cannot be imported into client-side code.
- * 
- * Dynamic environment variables cannot be used during prerendering.
  * 
  * ```ts
  * import { env } from '$env/dynamic/private';
@@ -169,14 +166,15 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		GJS_DEBUG_TOPICS: string;
+		npm_package_devDependencies__sveltejs_adapter_vercel: string;
 		npm_package_dependencies__fontsource_barlow: string;
 		USER: string;
 		LC_TIME: string;
 		npm_config_user_agent: string;
 		XDG_SESSION_TYPE: string;
 		BUN_INSTALL: string;
-		npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 		npm_package_devDependencies_vite: string;
+		npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 		npm_node_execpath: string;
 		SHLVL: string;
 		OLDPWD: string;
@@ -188,6 +186,7 @@ declare module '$env/dynamic/private' {
 		ZSH: string;
 		LSCOLORS: string;
 		NVM_INC: string;
+		npm_package_devDependencies_svelte_preprocess: string;
 		GTK_MODULES: string;
 		GNOME_SHELL_SESSION_MODE: string;
 		PAGER: string;
@@ -198,7 +197,6 @@ declare module '$env/dynamic/private' {
 		GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 		COLORTERM: string;
 		TERMINATOR_DBUS_NAME: string;
-		npm_package_devDependencies__tailwindcss_forms: string;
 		npm_package_devDependencies_tailwindcss: string;
 		NVM_DIR: string;
 		WAYLAND_DISPLAY: string;
@@ -243,7 +241,6 @@ declare module '$env/dynamic/private' {
 		SSH_AUTH_SOCK: string;
 		SSH_AGENT_LAUNCHER: string;
 		npm_package_devDependencies__sveltejs_kit: string;
-		npm_package_devDependencies__tailwindcss_typography: string;
 		LC_NAME: string;
 		TERMINATOR_UUID: string;
 		SHELL: string;
@@ -276,11 +273,10 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_preview: string;
 		VTE_VERSION: string;
 		PNPM_HOME: string;
-		npm_package_devDependencies__tailwindcss_aspect_ratio: string;
 		INIT_CWD: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
-		[key: `${string}`]: string | undefined;
+		[key: string]: string | undefined;
 	}
 }
 
@@ -288,8 +284,6 @@ declare module '$env/dynamic/private' {
  * Similar to [`$env/dynamic/private`](https://kit.svelte.dev/docs/modules#$env-dynamic-private), but only includes variables that begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env) (which defaults to `PUBLIC_`), and can therefore safely be exposed to client-side code.
  * 
  * Note that public dynamic environment variables must all be sent from the server to the client, causing larger network requests — when possible, use `$env/static/public` instead.
- * 
- * Dynamic environment variables cannot be used during prerendering.
  * 
  * ```ts
  * import { env } from '$env/dynamic/public';
