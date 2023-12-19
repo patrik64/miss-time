@@ -20,7 +20,7 @@
     <!-- Logo -->
     <div>
       <div class="text-white font-black text-2xl md:text-4xl tracking-wide">
-        sunnyside
+        Lea
       </div>
     </div>
     <!-- Hamburger -->

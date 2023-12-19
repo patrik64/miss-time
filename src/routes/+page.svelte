@@ -41,7 +41,7 @@
     <h1
       class="z-20 mt-[80px] pt-20 lg:pt-44 pb-16  text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center uppercase font-fraunces tracking-[0.5rem] font-black"
     >
-      we are creatives
+      Powerlifting Fitness Trener
     </h1>
     <div class="z-30 lg:mt-16">
       <a

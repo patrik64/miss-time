@@ -53,7 +53,7 @@
   <footer>
     <div class="bg-[#90d7c9] py-16 flex flex-col gap-8 items-center">
       <div class="text-[#3d7b6e] font-black text-2xl md:text-4xl tracking-wide">
-        sunnyside
+        Lea
       </div>
       <ul class="text-project-dark-cyan font-medium text-base flex gap-8">
         <li><a href="/">About</a></li>
