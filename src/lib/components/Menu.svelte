@@ -10,7 +10,7 @@
   class="bg-white relative w-full flex flex-col gap-2 justify-center items-center transition-all py-6 rounded-md drop-shadow-xl"
 >
   <li class="py-4 text-project-darkest-blue" on:click={closeMenu}>
-    <a href={"#"} class="font-medium text-xl">About</a>
+    <a href={"#"} class="font-medium text-xl">AboutTTT</a>
   </li>
   <li class="py-4 text-project-darkest-blue" on:click={closeMenu}>
     <a href={"#"} class="font-medium text-xl">Services</a>

@@ -33,7 +33,7 @@
       <Icon icon="bytesize:menu" class={`text-white text-3xl`} />
     </div>
     <ul class="hidden md:flex items-center space-x-10 text-white font-medium text-lg">
-      <li><a href="/">About</a></li>
+      <li><a href="/about">Aboutttt</a></li>
       <li><a href="/">Services</a></li>
       <li><a href="/">Projects</a></li>
       <ContactButton type={'secondary'} />

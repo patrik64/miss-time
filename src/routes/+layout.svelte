@@ -56,7 +56,7 @@
         Lea
       </div>
       <ul class="text-project-dark-cyan font-medium text-base flex gap-8">
-        <li><a href="/">About</a></li>
+        <li><a href="/about">Okolo</a></li>
         <li><a href="/">Services</a></li>
         <li><a href="/">Projects</a></li>
       </ul>
