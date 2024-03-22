@@ -3,6 +3,6 @@ Lea's personal website
 
 # how to use:
 
-`npm install`
+`npm install` 
 `npm run dev`
 
